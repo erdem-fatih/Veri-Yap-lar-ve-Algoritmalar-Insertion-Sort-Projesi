@@ -1,0 +1,26 @@
+# Veri Yapıları ve Algoritmalar
+  Merge Sort Projesi
+    Proje 2
+      
+	[16,21,11,8,12,22] -> Merge Sort
+
+	Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+	Big-O gösterimini yazınız.
+	
+	Answers: 
+		
+	 [16,21,11,8,12,22]
+		 =(bölüm)> [16,21,11] [8,12,22] =(bölüm)> [16,21] [11] [8] [12,22] =(bölüm)> [16] [21] [11] [8] [12] [22] =(birleşim)> [11,16,21] [8,12,22] =(birleşim)> [ 8,11,12,21,22]
+   
+   [16,21,11,8,12,22] ==> [ 8,11,12,21,22]
+	 
+	time Complexity;	 
+		Merge Sort oldukça hızlıdır ve zaman karmaşıklığı O(n*log n). Aynı zamanda, "eşit" öğelerin sıralanmış listede aynı sırada sıralandığı anlamına gelen kararlı bir sıralamadır.
+		Binary Search'te zaten öğrendiğimiz gibi , her adımda bir sayıyı ikiye böldüğümüzde, logaritmik bir fonksiyon kullanılarak temsil edilebilir, ki bu log n ve adım sayısı log n + 1(en fazla) ile temsil edilebilir.
+		Ayrıca, herhangi bir alt dizinin ortasını bulmak için tek adımlı bir işlem gerçekleştiriyoruz, yani O(1).
+		Orijinal eleman dizisini bölerek yapılan alt dizileri birleştirmek için n bir çalışma süresi O(n)gerekecektir.
+		Böylece merge Sort fonksiyonun toplam zamanı olur n(log n + 1), bu da bize zaman karmaşıklığını verir O(n*log n).
+
+    Worst Case Time Complexity [ Big-O ]: O(n*log n)
+ 		Best Case Time Complexity [Big-omega]: O(n*log n)
+		Average Time Complexity [Big-theta]: O(n*log n)
